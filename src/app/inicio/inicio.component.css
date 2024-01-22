@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo {
+    width: 100%;
+    max-height: 100vh;
+    z-index: -10;
+    position: absolute;
+    object-fit: cover;
+}
+
+.logo {
+    max-width: 20vw;
+}
+
+.pokebola {
+    max-width: 3vw;
+}
+
+.conteudo {
+    min-height: 100vh;
+    float: right;
+    min-width: 50vw;
+    position: relative;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(265deg, rgba(0, 0, 0, 1) 2%, rgba(150, 150, 150, 0) 100%);
+}
+
+.principal {
+    position: relative;
+    top: 110px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: normal;
+    max-width: 40vw;
+    color: #ffffff;
+}
+
+#titulo {
+    margin-bottom: 17px;
+}
+
+.topico {
+    margin-top: 10px;
+}
+
+.topico img {
+    float: left;
+    margin-right: 15px;
+}
+
+/*
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+}
+*/

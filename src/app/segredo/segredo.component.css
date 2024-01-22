@@ -1,0 +1,95 @@
+section{
+    background-color: black;
+    height: 100%;
+    padding: 20px;
+    font-family: Rye;
+}
+
+.fundo{
+    height: 1000px;
+    width: 60vw;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    top: 50px;
+    bottom: 50px;
+    background-color: #efe6d4;
+}
+
+.borda{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.cartaz{
+    text-align: center;
+    align-items: center;
+    padding: 120px;
+}
+
+.monta{
+    border: 4px solid #514744;
+    border-radius: 2px;
+    width: 30vw;
+    margin-top: 10px;
+}
+
+.procurado{
+    font-size: 110px;
+    color: #514744;
+    font-family: Grenze Gotisch;
+}
+
+.nome{
+    font-size: 60px;
+    color: #efe6d4;
+    background-color: #514744;
+    max-width: 300px;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.alerta{
+    color: #efe6d4;
+    background-color: #514744;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.fim{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: #514744;
+}
+
+.motivo{
+    font-size: 40px;
+}
+
+.descricao{
+    word-wrap: break-word;
+    max-width: 200px;
+    font-size: 20px;
+}
+
+.separa{
+    height: 100px;
+    width: 1px;
+    background-color: #514744;
+}
+
+.recompensa{
+    font-size: 40px;
+}
+
+.valor{
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: -20px;
+}

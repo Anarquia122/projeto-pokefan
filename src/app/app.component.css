@@ -1,0 +1,103 @@
+.github {
+    max-width: 3vw;
+}
+
+.logo {
+    max-width: 7vw;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    color: white;
+  }
+  
+  .navbar a span.active {
+    text-decoration: underline;
+  }
+
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Garante que o conteúdo ocupe pelo menos a altura total da tela */
+}
+
+router-outlet {
+    flex: 1;
+    width: 100%;
+    max-height: 0;
+    /* Ocupa o espaço restante para garantir que o footer permaneça na parte inferior */
+}
+
+.navbar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 23%, rgba(255, 255, 255, 0) 100%);
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+    z-index: 100;
+}
+
+li {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+li:hover {
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 100px;
+}
+
+footer {
+    margin-top: auto;
+    background: rgb(38, 49, 56);
+    background: linear-gradient(0deg, rgba(38, 49, 56, 1) 4%, rgba(28, 21, 39, 1) 73%);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    gap: 80px;
+    max-height: 120px;
+    overflow-x: hidden;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*
+.degrade{
+    position: relative;
+    z-index: 100;
+    width: 100%; 
+    background: rgb(38,49,56);
+    background: linear-gradient(0deg, rgba(38,49,56,1) 4%, rgba(255,255,255,0) 73%);;
+}
+*/
+.logo-f {
+    max-width: 9vw;
+}
+
+.batz {
+    max-width: 7vw;
+    object-fit: cover;
+    overflow-y: unset;
+}
+
+.segredo{
+    cursor: default;
+}
+
+.copyright {
+    background-color: #263138;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright a {
+    color: #ff9a6c;
+    text-underline-offset: 4px;
+}

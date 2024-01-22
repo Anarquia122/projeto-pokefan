@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(241, 117, 49);
+    background: radial-gradient(circle, rgba(241, 117, 49, 1) 13%, rgba(226, 15, 15, 1) 79%);
+}
