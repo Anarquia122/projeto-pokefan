@@ -101,8 +101,8 @@ export class RecompensasComponent implements AfterViewInit {
       img.style.flex = '1';
       img.style.backgroundSize = 'cover';
       img.style.backgroundPosition = 'center';
-      img.style.maxWidth = '20vh';
-      img.style.height = 'auto';
+      img.style.maxWidth = '43.3%';
+      img.style.height = '100%';
       img.style.float = 'left';
       img.style.borderRadius = '16px 0 0 16px';
 

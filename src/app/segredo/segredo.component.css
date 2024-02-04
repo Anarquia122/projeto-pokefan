@@ -3,11 +3,12 @@ section{
     height: 100%;
     padding: 20px;
     font-family: Rye;
+    position: relative;
 }
 
 .fundo{
-    height: 1000px;
-    width: 60vw;
+    height: 90%;
+    width: 80%;
     position: relative;
     margin: auto;
     margin-bottom: 50px;
@@ -18,7 +19,7 @@ section{
 
 .borda{
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     width: 100%;
     height: 100%;
 }
@@ -26,7 +27,25 @@ section{
 .cartaz{
     text-align: center;
     align-items: center;
-    padding: 120px;
+    padding: 120px 70px;
+    position: relative;
+    margin: auto;
+}
+
+.procurado{
+    font-size: 12vw;
+    color: #514744;
+    margin: auto;
+    font-family: Grenze Gotisch;
+}
+
+.nome{
+    font-size: 6vw;
+    color: #efe6d4;
+    background-color: #514744;
+    max-width: 40vw;
+    border-radius: 4px;
+    margin: auto;
 }
 
 .monta{
@@ -36,25 +55,11 @@ section{
     margin-top: 10px;
 }
 
-.procurado{
-    font-size: 110px;
-    color: #514744;
-    font-family: Grenze Gotisch;
-}
-
-.nome{
-    font-size: 60px;
-    color: #efe6d4;
-    background-color: #514744;
-    max-width: 300px;
-    border-radius: 4px;
-    margin: auto;
-}
-
 .alerta{
     color: #efe6d4;
     background-color: #514744;
-    max-width: 450px;
+    font-size: 3vw;
+    max-width: 50vw;
     margin: auto;
     margin-top: 10px;
     border-radius: 4px;
@@ -63,33 +68,36 @@ section{
 
 .fim{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 20px;
     color: #514744;
+    padding: 0 40px;
+    gap: 10px;
 }
 
 .motivo{
-    font-size: 40px;
+    font-size: 4.4vw;
 }
 
 .descricao{
     word-wrap: break-word;
     max-width: 200px;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .separa{
-    height: 100px;
-    width: 1px;
     background-color: #514744;
+    position: relative;
+    width: 2px;
+    height: 100px;
 }
 
 .recompensa{
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 .valor{
     font-weight: 600;
-    font-size: 60px;
+    font-size: 5vw;
     margin-top: -20px;
 }

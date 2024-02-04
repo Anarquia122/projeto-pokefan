@@ -1,0 +1,18 @@
+@media (max-width: 440px) {
+    section {
+        height: 100vh;
+    }
+
+    .fundo {
+        height: 70%;
+        top: 90px;
+    }
+
+    .descricao {
+        font-size: 3.5vw;
+    }
+
+    .valor {
+        margin-top: -13px;
+    }
+}

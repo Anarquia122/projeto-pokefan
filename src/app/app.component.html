@@ -7,32 +7,46 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<header>
-  
-  <nav class="navbar bg-body-tertiary navbar-expand-lg  ">
+<header class="navegacao">
+  <div class="logos-responsive">
     <a class="navbar-brand" href="https://github.com/Anarquia122" target="_blank">
-      <img class="github" src="/assets/images/github-branco.png" alt="">
+      <img class="github" src="/assets/images/github-branco.png" alt="Logo Guithub">
     </a>
     <a class="navbar-brand" routerLink="" (click)="setActive('inicio')">
-      <img class="logo" src="/assets/images/logo-pokemon.png" alt="">
+      <img class="logo" src="/assets/images/logo-pokemon.png" alt="Logo Pokemon">
     </a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="" (click)="setActive('inicio')">
-          <span [class.active]="activeLink === 'inicio'">inicio</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/pokedex" (click)="setActive('pokedex')">
-          <span [class.active]="activeLink === 'pokedex'">Pokedex</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/recompensas" (click)="setActive('recompensas')">
-          <span [class.active]="activeLink === 'recompensas'">Desafios</span>
-        </a>
-      </li>
-    </ul>
+  </div>
+  <div class="botao-responsive">
+    <button class="hamburger"></button>
+  </div>
+  <nav class="navbar bg-body-tertiary navbar-expand-lg">
+    <div class="logos">
+      <a class="navbar-brand" href="https://github.com/Anarquia122" target="_blank">
+        <img class="github" src="/assets/images/github-branco.png" alt="Logo Guithub">
+      </a>
+      <a class="navbar-brand" routerLink="" (click)="setActive('inicio')">
+        <img class="logo" src="/assets/images/logo-pokemon.png" alt="Logo Pokemon">
+      </a>
+    </div>
+    <div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" (click)="setActive('inicio')">
+            <span [class.active]="activeLink === 'inicio'">inicio</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pokedex" (click)="setActive('pokedex')">
+            <span [class.active]="activeLink === 'pokedex'">Pokedex</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/recompensas" (click)="setActive('recompensas')">
+            <span [class.active]="activeLink === 'recompensas'">Desafios</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 </nav>
 </header>
 
@@ -40,7 +54,7 @@
 
 <footer>
   
-    <div>
+    <div class="fim">
         <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
             <img class="logo-f" src="/assets/images/logo-pokemon.png" alt="">
         </a>

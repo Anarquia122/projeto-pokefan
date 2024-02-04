@@ -1,0 +1,29 @@
+@media (max-width: 524px) {
+    .conteudo {
+        float: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.9660656498927696) 18%, rgba(0, 0, 0, 0.6999592073157388) 74%, rgba(0, 0, 0, 0.6467379188003326) 92%);
+    }
+
+    .logo {
+        max-width: 40vw;
+        margin: auto;
+    }
+
+    .principal {
+        max-width: 80vw;
+        margin-bottom: 65px;
+        top: 60px;
+    }
+
+    .descricao {
+        max-width: 80vw;
+        margin: 10px 0;
+    }
+}

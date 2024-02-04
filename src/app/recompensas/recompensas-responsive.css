@@ -1,0 +1,15 @@
+@media (max-width: 520px) {
+    .fim .ash {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .textos {
+        font-weight: 700;
+        -webkit-text-stroke: 0.6px #000;
+    }
+
+    .pokebola {
+        max-height: 4vh;
+    }
+}

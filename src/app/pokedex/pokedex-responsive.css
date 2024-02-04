@@ -1,0 +1,65 @@
+@media (max-width: 726px) {
+    .pokemon {
+        min-height: 500px;
+        max-width: 55vw;
+        width: 55vw;
+    }
+
+    .pokemon h3 {
+        font-size: 26px;
+        max-width: 190px;
+    }
+
+    .botoes {
+        width: 15vw;
+    }
+
+    .botoes .botao img {
+        max-width: 8.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .pokemon {
+        min-height: 400px;
+        max-width: 75vw;
+        width: 75vw;
+    }
+
+    .botoes {
+        width: 18vw;
+    }
+
+    .botoes .botao img {
+        max-width: 9.5vw;
+    }
+}
+
+@media (max-width: 440px) {
+    .fundo {
+        padding-bottom: 150px;
+    }
+
+    .pokemon {
+        max-height: 650px;
+        max-width: 80vw;
+        width: 80vw;
+    }
+
+    .pokemon .tela {
+        max-height: 400px;
+        min-height: 400px;
+    }
+
+    .pokemon .traco {
+        height: 5px;
+    }
+
+    .botoes {
+        height: 50vh;
+    }
+
+    .botoes .botao img {
+        max-width: 11.5vw;
+    }
+}

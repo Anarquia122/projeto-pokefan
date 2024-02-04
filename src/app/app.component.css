@@ -1,9 +1,31 @@
+button:focus {
+    outline: none;
+}
+
+.logos {
+    position: relative;
+    display: flex;
+    max-width: 30%;
+    max-height: 70%;
+}
+
+.logos-responsive {
+    display: none;
+}
+
 .github {
-    max-width: 3vw;
+    max-width: 40px;
+    position: relative;
 }
 
 .logo {
-    max-width: 7vw;
+    max-width: 90px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .navbar a {
@@ -11,11 +33,33 @@
     padding: 5px;
     position: relative;
     color: white;
-  }
-  
-  .navbar a span.active {
+}
+
+.navbar a span.active {
     text-decoration: underline;
-  }
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
 
 :host {
     display: flex;
@@ -35,7 +79,9 @@ router-outlet {
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 23%, rgba(255, 255, 255, 0) 100%);
     position: fixed;
+    align-items: center;
     width: 100%;
+    max-height: 80px;
     color: #ffffff;
     z-index: 100;
 }
@@ -56,6 +102,7 @@ footer {
     background: linear-gradient(0deg, rgba(38, 49, 56, 1) 4%, rgba(28, 21, 39, 1) 73%);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px 20px;
     gap: 80px;
     max-height: 120px;
@@ -65,6 +112,12 @@ footer {
 footer p {
     color: #ffffff;
     font-size: 20px;
+}
+
+.fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*
@@ -86,7 +139,7 @@ footer p {
     overflow-y: unset;
 }
 
-.segredo{
+.segredo {
     cursor: default;
 }
 
@@ -100,4 +153,132 @@ footer p {
 .copyright a {
     color: #ff9a6c;
     text-underline-offset: 4px;
+}
+
+@media (max-width: 750px) {
+    /* NAVEGAÇÃO */
+    .botao-responsive {
+        background-color: aqua;
+        height: 40px;
+        width: 40px;
+        padding-top: 10px;
+        padding-left: 5px;
+        border-radius: 0 0 0 16px;
+        cursor: pointer;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    .navegacao {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 23%, rgba(255, 255, 255, 0) 100%);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        padding-top: 7px;
+        padding-right: 15px;
+        padding-left: 15px;
+        z-index: 100;
+    }
+
+    .logos-responsive {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logos{
+        display: none;
+    }
+
+    .navbar {
+        top: 0;
+        left: 0;
+        max-width: 180px;
+        max-height: 300px;
+        min-height: 300px;
+        padding: 0;
+        margin-top: 50px;
+        z-index: 2000;
+
+        float: left;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        clip-path: circle(100px at -75% -15%);
+        transition: 0.8s ease-in;
+        pointer-events: none;
+
+        background: none;
+        background-color: #000;
+        border-top: 1.5px solid #fff;
+        border-bottom: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+        border-radius: 0 5px 5px 0;
+
+    }
+
+    .navbar-nav {
+        float: left;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;
+    }
+
+    li {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+    li:hover{
+        background-color: none;
+        border-radius: 0;
+    }
+
+    .navbar.active {
+        clip-path: circle(1500px at 90% -40%);
+        pointer-events: all;
+    }
+
+    .navegacao.active .hamburger{
+        border-top-color: transparent;
+    }
+
+    .navegacao.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    .navegacao.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    /* NAVEGAÇÃO */
+
+    /* FOOTER */
+    .batz {
+        max-width: 10vw;
+    }
+
+    .logo-f {
+        max-width: 18vw;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+    /* FOOTER */
 }

@@ -27,6 +27,7 @@
 .grama{
     z-index: -9;
     width: 100%;
+    min-height: 300px;
     object-fit: cover;
     position: absolute;
     bottom: 0;
@@ -43,6 +44,13 @@
     position: relative;
 }
 
+.fim .ash {
+    position: absolute;
+    max-width: 350px;
+    margin: 0 75% 0 25%;
+    z-index: -1;
+}
+
 .subtitulo{
     display: flex;
     align-items: flex-end;
@@ -52,10 +60,10 @@
 
 .textos{
     font-weight: 1800;
-    color: #ffffff;
+    color: #803535;
     font-family: Rubik;
     letter-spacing: 2px;
-    -webkit-text-stroke: 1px #000000;
+    -webkit-text-stroke: 1px #000;
 }
 
 .pokebola{
@@ -78,34 +86,4 @@
     max-width: 100vw;
     position: relative;
     margin: auto;
-}
-
-.box {
-    box-sizing: border-box;
-    width: calc(50% - 20px);
-    margin: 10px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.text {
-    padding: 10px;
-    flex: 1;
-}
-
-.image {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-}
-
-.button {
-    padding: 10px;
-    text-align: center;
-    background-color: #3498db;
-    color: #fff;
-    cursor: pointer;
 }

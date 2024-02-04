@@ -126,7 +126,7 @@ export class PokedexComponent implements AfterViewInit {
           img.src = `/assets/tipos-pokemons/${elementosItem}.png`;
           img.alt = elementosItem;
           img.classList.add('elementos');
-          img.style.maxHeight = '120px';
+          img.style.maxWidth = '120px';
           img.style.marginBottom = '10px';
           elementos.appendChild(img);
         });
@@ -149,7 +149,7 @@ export class PokedexComponent implements AfterViewInit {
           img.src = `/assets/tipos-pokemons/${vantagemItem}.png`;
           img.alt = vantagemItem;
           img.classList.add('vantagens');
-          img.style.maxHeight = '75px';
+          img.style.maxWidth = '60px';
           img.style.marginBottom = '10px';
           vantagens.appendChild(img);
         });
@@ -171,7 +171,7 @@ export class PokedexComponent implements AfterViewInit {
           img.src = `/assets/tipos-pokemons/${desvantagemItem}.png`;
           img.alt = desvantagemItem;
           img.classList.add('desvantagens');
-          img.style.maxHeight = '75px';
+          img.style.maxWidth = '60px';
           img.style.marginBottom = '10px';
           desvantagens.appendChild(img);
         });
@@ -182,7 +182,7 @@ export class PokedexComponent implements AfterViewInit {
         descricaoText.textContent = personagem.descricao;
         descricaoText.classList.add('descrevendo');
         descricaoText.style.wordBreak = 'break';
-        descricaoText.style.maxWidth = '600px'
+        descricaoText.style.maxWidth = '60%'
         descricaoText.style.border = '2px solid rgb(28, 21, 39)';
         descricaoText.style.backgroundColor = '#ffffff';
         descricaoText.style.color = '#000000';
