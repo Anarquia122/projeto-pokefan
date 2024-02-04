@@ -1,4 +1,8 @@
 @media (max-width: 520px) {
+    .titulo {
+        -webkit-text-stroke: 1px #000000;
+    }
+
     .fim .ash {
         max-width: 350px;
         margin: auto;

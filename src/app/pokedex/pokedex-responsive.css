@@ -55,6 +55,10 @@
         height: 5px;
     }
 
+    .pokemon h3 {
+        -webkit-text-stroke: 1px black;
+    }
+
     .botoes {
         height: 50vh;
     }
