@@ -1,6 +1,6 @@
 # ProjetoPilgrimStyle
 
-Link da página: https://projeto-pokefan-9fbgjvhuf-italo-augustos-projects.vercel.app
+Link da página: https://projeto-pokefan.vercel.app
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.2.
 
