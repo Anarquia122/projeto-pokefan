@@ -1,0 +1,63 @@
+
+<button 
+    class="btn-modal-rotom" 
+    (click)="toggleModal()">
+
+    @if(modalAberta) {
+        <img
+            src="assets/rotom-ai/close-btn-icon.png"
+            alt="close Btn Icon"
+            class="rotom-icon">
+    } @else {
+        <img
+            src="assets/rotom-ai/rotom-ai-icon.png"
+            alt="Rotom Phone Icon"
+            class="rotom-icon">
+    }
+
+</button>
+
+<dialog #rotomAiModal class="modal-rotom-layout" >
+    <div class="modal-content">
+        <div class="header-container">
+            <img
+                src="assets/rotom-ai/rotom-ai-icon.png"
+                alt="Rotom Phone Icon"
+                class="rotom-profile-icon">
+                
+            <h2 class="modal-title">Rotom AI</h2>
+        </div>
+
+        <div class="messages-area">
+            @for (item of messagesList; track $index) {
+                @if (item.sender === 'user') {
+                    <p class="user-message">{{ item.text }}</p>
+                } @else {
+                    <p class="rotom-response">{{ item.text }}</p>
+                }
+            }
+
+            @if (isLoading) {
+                <p class="rotom-response">loading...</p>
+            }
+        </div>
+
+        <div class="footer-container">
+            <textarea name="chat" 
+                      id="chat-textarea" 
+                      placeholder="Type your message..." 
+                      rows="1" 
+                      [value]="newMessage"
+                      (input)="newMessage = $any($event.target).value"
+                      [disabled]="isLoading"
+                      (keydown.enter)="$event.preventDefault(); sendMessage()"
+                      class="chat-textarea"></textarea>
+
+            <button class="btn-send" 
+                    [disabled]="isLoading"
+                    (click)="sendMessage()">
+                <i class="bi bi-send"></i>
+            </button>
+        </div>
+    </div>
+</dialog>

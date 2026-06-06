@@ -5,11 +5,12 @@ import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
 import { Router } from '@angular/router';
 import { Renderer2, ElementRef, AfterViewInit } from '@angular/core';
+import { RotomPhoneComponent } from './shared/rotom-phone/rotom-phone.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, RotomPhoneComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
